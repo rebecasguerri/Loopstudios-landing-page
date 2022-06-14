@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+@font-face {
+    font-family: 'Atala';
+    src: url('Alata/Alata-Regular.ttf')
+    format('truetype');
+}
+@font-face {
+    font-family: 'Josefin' ;
+    src: url('Josefin_Sans/static/JosefinSans-Light.ttf ')
+    format('truetype');
+}
+
+
+
+header{
+    background: url(images/desktop/image-header.jpg) no-repeat center center;
+    width: 100vw;
+    height: 80vh;  
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Atala';
+    
+}
+.container::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.267);
+    box-shadow: inset 120px 100px 250px rgba(0, 0, 0, 0.308),inset -120px -100px 250px rgba(0, 0, 0, 0.619)  ;
+}
+.logo{
+    z-index: 2;
+}
+nav{
+    z-index: 2;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 1.5rem;
+}
+nav ul li{
+    margin-right: 1.5rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+.txt-header {
+    font-size: 5rem;
+    color: white;
+    border: 0.1rem solid white;
+    width: 41vw;
+    position: absolute;
+    left: 5rem;
+    padding: 3rem;
+    font-family: 'Josefin', sans-serif;
+    z-index: 2;
+    
+}
+.cont{
+    padding: 5rem;
+}
