@@ -228,3 +228,23 @@ footer{
 .info li:hover{
     text-decoration: underline;
 }
+
+@media (max-width: 768px){
+    .about picture{   
+        width: 80%;
+    }
+    .about img {
+        width: 84%;
+    }
+    .apr .btn {
+        width: 13%;
+    }
+    .jobs h1 {
+        padding: 1.5rem;
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 17rem;
+        width: 50%;
+        text-align: initial;
+    }
+}
