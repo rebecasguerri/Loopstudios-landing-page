@@ -17,234 +17,33 @@ html{
 }
 
 /*HEADER*/
-
-header{
-    background: url(images/desktop/image-header.jpg) no-repeat center center/cover;
-    width: 100%;
-    height: 80vh;  
-}
-
-.container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Atala';
-    
-}
-.container::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80vh;
-    background: rgba(0, 0, 0, 0.267);
-    box-shadow: inset 120px 100px 250px rgba(0, 0, 0, 0.308),inset -120px -100px 250px rgba(0, 0, 0, 0.619)  ;
-}
-.logo{
-    z-index: 2;
-}
-nav{
-    z-index: 2;
-}
-nav ul{
-    display: flex;
-    list-style-type: none;
-    font-size: 1.3rem;
-}
-nav ul li{
-    margin-right: 1.5rem;
-}
-nav ul li a{
-    text-decoration: none;
-    color: white;
-}
-nav ul li a:hover{
-    text-decoration: underline;
-}
-.txt-header {
-    font-size: 5rem;
-    color: white;
-    border: 0.1rem solid white;
-    width: 41vw;
-    position: absolute;
-    left: 5rem;
-    padding: 3rem;
-    font-family: 'Josefin', sans-serif;
-    z-index: 2;
-    
-}
-.cont{
-    padding: 5rem;
-}
-
-/*ABOUT US*/
-.about{
- margin: 10% auto;
- display: flex;
- flex-direction: row;
- justify-content: center;
- align-items: center;
- height: 50vh;
-}
-.about img{
-    width: 70%;
-}
-
-.about article {
-    width: 30%;
-    background-color: white;
-    padding: 6rem 0 0 6rem;
-    margin-left: -35%;
-    margin-bottom: -15.6%;
-}
-.about article h1 {
-    font-family: 'Josefin', sans-serif;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-}
-.about article p{
-    font-family: 'Atala';
-    color: rgba(0, 0, 0, 0.412);
-    font-size: 1rem;
-}
-
- .apr article{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.apr h1{
-    font-size: 3rem;
-    color: rgba(0, 0, 0, 0.861);
-}
-.apr{
-    width: 80%;
-    margin: 0 auto;
-    font-family: 'Josefin', sans-serif;
-    height: 20vh;
-}
-.apr .btn{
-   border: 1px solid black;
-   padding: 0.5rem;
-   background-color: white;
-   cursor: pointer;
-   width: 10%;
-}
-.apr .btn:hover{
-    background-color: black;
-    color: white;
-}
-
-.jobs{
-    display: grid;
-    grid-template-columns: repeat(4,1fr );
-    grid-template-rows: repeat(3,1fr);
-    grid-column-gap: 1.5rem;
-    grid-row-gap: 2rem;
-    margin: 0 auto;
-    width: 80%;
-    font-family: 'Josefin';
-    
-}
-.jobs h1 {
-    padding: 1.5rem;
-    display: flex;
-    justify-content: flex-start;
-    padding-top: 21rem;
-    width: 50%;
-    text-align: initial;
-}
-.boxes{
-    width: 100%;
-    height: 30vw;
-    text-align: center;
-    color: white;
-}
-.boxes:hover{
-    filter: opacity(36%);
-    color: black;
-}
-.boxes.i1{
-    background: url(images/desktop/image-deep-earth.jpg) no-repeat center center/cover
-   
-}
-.boxes.i2{
-    background: url(images/desktop/image-night-arcade.jpg) no-repeat center center/cover; 
-}
-.boxes.i3{
-    background: url(images/desktop/image-soccer-team.jpg) no-repeat center center/cover;
-}
-.boxes.i4{
-    background: url(images/desktop/image-grid.jpg) no-repeat center center/cover; 
-}
-.boxes.i5{
-    background: url(images/desktop/image-from-above.jpg) no-repeat center center/cover; 
-}
-.boxes.i6{
-    background: url(images/desktop/image-pocket-borealis.jpg) no-repeat center center/cover;
-    
-}
-.boxes.i7{
-    background: url(images/desktop/image-curiosity.jpg) no-repeat center center/cover;
-    
-}
-.boxes.i8{
-    background: url(images/desktop/image-fisheye.jpg) no-repeat center center/cover;  
-}
-
-footer{
-    background-color: black;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    font-family: 'Josefin';
-    padding: 3rem;
+.header{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
 
 }
-.info, .media{
-    display: flex;
-    flex-direction: row;
-   list-style-type: none;
-   font-size: 1.6rem;
-   margin-top: 2rem;
+
+.nav-menu{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    gap:1rem;
+
 }
-.info li{
-    margin-right: 1rem;
-}
-.media{
-    margin-bottom: 2rem;
-}
-.media li{
-    margin-left: 1rem;
-}
-.media li:hover{
-     border-bottom: 0.16rem solid white;
-     cursor: pointer;
-}
-.info li:hover{
-    text-decoration: underline;
+.hamburguer {
+   cursor:pointer; 
+   display:none;
 }
 
-@media (max-width: 768px){
-    .about picture{   
-        width: 80%;
-    }
-    .about img {
-        width: 84%;
-    }
-    .apr .btn {
-        width: 13%;
-    }
-    .jobs h1 {
-        padding: 1.5rem;
-        display: flex;
-        justify-content: flex-start;
-        padding-top: 17rem;
-        width: 50%;
-        text-align: initial;
-    }
+
+.bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
 }
