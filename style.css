@@ -141,11 +141,50 @@ html{
 }
 .main-frist h1 {
     position: relative;
-    top: 13rem;
+    top: 14rem;
     left: 8rem;
-    width: 28rem;
+    width: 38rem;
     color: white;
     font-size: 5rem;
-    border: 2px solid white;
-    padding: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.631);
+    color: rgba(255, 255, 255, 0.823);
+    padding: 2rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+@media (max-width:768px){
+    .main-frist h1 {
+        position: relative;
+        top: 15rem;
+        left: 4rem;
+        width: 31rem;
+        color: white;
+        font-size: 4rem;
+        border: 2px solid rgba(255, 255, 255, 0.631);
+        color: rgba(255, 255, 255, 0.823);
+        padding: 1rem;
+        font-weight: 100;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        line-height: 5rem;
+    }
+}
+@media (max-width:320px){
+    .main-frist h1 {
+        position: relative;
+        top: 13rem;
+        left: 1rem;
+        width: 28rem;
+        color: white;
+        font-size: 4rem;
+        border: 2px solid rgba(255, 255, 255, 0.631);
+        color: rgba(255, 255, 255, 0.823);
+        padding: 0.3rem;
+        font-weight: 100;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        line-height: 4rem;
+    }
 }
