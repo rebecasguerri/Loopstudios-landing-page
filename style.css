@@ -4,6 +4,7 @@
 }
 html{
     font-size: 62.5%;
+    background-color: red;
 }
 @font-face {
     font-family: 'Atala';
@@ -18,20 +19,40 @@ html{
 
 /*HEADER*/
 .header{
+    width: 100vw;
+   
+}
+.navbar{
     display:flex;
     flex-direction:row;
     justify-content:space-between;
     align-items:center;
-
+    padding: 1rem;
+    
 }
-
 .nav-menu{
     display:flex;
     flex-direction:row;
     align-items:center;
-    gap:1rem;
-
+    gap: 1.5rem;
 }
+
+.nav-menu .nav-item .nav-link{
+    color: white;
+    text-decoration: none;
+    font-size: 1.7rem;
+    cursor: pointer;
+    padding-bottom: 0.5rem;
+    font-family: sans-serif;
+}
+.nav-menu .nav-item .nav-link:hover{
+    border-bottom: 2px solid white;
+   
+}
+.nav-item{
+    list-style-type: none;
+}
+
 .hamburguer {
    cursor:pointer; 
    display:none;
@@ -46,4 +67,85 @@ html{
     margin: 5px auto;
     background-color: #fff;
     transition: all 0.3s ease-in-out;
+}
+@media (max-width:768px){
+
+#logo{
+    width: 15rem;
+}
+#logo.active{
+    z-index: 2;
+}
+ .hamburguer{
+    display: block;
+ }
+ .hamburguer.active{
+    z-index: 1;
+ }
+ .hamburguer.active .bar:nth-child(2){
+    opacity: 0;
+}
+.hamburguer.active .bar:nth-child(1){
+ transform: translateY(8px) rotate(45deg); 
+
+ }
+ .hamburguer.active .bar:nth-child(3){
+     transform: translateY(-8px) rotate(-45deg);
+ }
+  .nav-menu {
+    position: absolute;
+    left: -100%;
+    top: 0px;
+    z-index: -3;
+    gap: 0;
+ 
+    border-radius: 0 0 20px 20px;
+    background-color: black;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    transition: 0.3s;
+}
+
+.nav-menu.active{
+    left: 0;
+    z-index: 1;
+}
+.nav-menu .nav-item .nav-link{
+    color: white;
+    text-decoration: none;
+    font-size: 3rem;
+    cursor: pointer;
+    font-family: sans-serif;
+    line-height: 6rem;  
+  
+}
+
+.nav-menu {
+   text-align: left;
+   padding-top: 6rem;
+   margin: auto auto ;
+}
+}
+
+/*MAIN AREA*/
+.main-frist{
+    background-image: url(images/desktop/image-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 70vh;
+    margin-top: -6rem;
+   
+}
+.main-frist h1 {
+    position: relative;
+    top: 13rem;
+    left: 8rem;
+    width: 28rem;
+    color: white;
+    font-size: 5rem;
+    border: 2px solid white;
+    padding: 1rem;
 }
