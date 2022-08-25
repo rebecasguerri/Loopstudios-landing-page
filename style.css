@@ -20,16 +20,17 @@ html{
 
 /*HEADER*/
 .header{
-    width: 100vw;
+    width: auto;
    
 }
-.navbar{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    align-items:center;
-    padding: 1rem;
-    
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    position: relative;
+    top: 4rem;
 }
 .nav-menu{
     display:flex;
@@ -72,7 +73,7 @@ html{
 @media (max-width:768px){
 
 #logo{
-    width: 15rem;
+    width: auto;
 }
 #logo.active{
     z-index: 2;
@@ -135,17 +136,17 @@ html{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    width: auto;
     height: 70vh;
     margin-top: -6rem;
    
 }
 .main-frist h1 {
     position: relative;
-    top: 14rem;
-    left: 8rem;
-    width: 38rem;
-    color: white;
+    top: 35%;
+    left: 5%;
+    display: inline-block;
+    max-width: 348px;
     font-size: 5rem;
     border: 2px solid rgba(255, 255, 255, 0.631);
     color: rgba(255, 255, 255, 0.823);
@@ -153,13 +154,48 @@ html{
     font-weight: 100;
     text-transform: uppercase;
     font-family: sans-serif;
+    margin: 0;
 }
-
+@media (max-width:1024px){
+    .main-frist h1 {
+        position: relative;
+        top: 40%;
+        left: 5%;
+        display: inline-block;
+        max-width: 320px;
+        font-size: 4rem;
+        border: 2px solid rgba(255, 255, 255, 0.631);
+        color: rgba(255, 255, 255, 0.823);
+        padding: 2rem;
+        font-weight: 100;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        margin: 0;
+        line-height: 5rem;
+    }
+}
 @media (max-width:768px){
     .main-frist h1 {
         position: relative;
-        top: 15rem;
-        left: 4rem;
+        top: 40%;
+        left: 5%;
+        width: 31rem;
+        color: white;
+        font-size: 4rem;
+        border: 2px solid rgba(255, 255, 255, 0.631);
+        color: rgba(255, 255, 255, 0.823);
+        padding: 1rem;
+        font-weight: 100;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        line-height: 5rem;
+    }
+}
+@media (max-width:425px){
+    .main-frist h1 {
+        position: relative;
+        top: 40%;
+        left: 5%;
         width: 31rem;
         color: white;
         font-size: 4rem;
@@ -175,41 +211,164 @@ html{
 @media (max-width:320px){
     .main-frist h1 {
         position: relative;
-        top: 13rem;
-        left: 1rem;
-        width: 28rem;
-        color: white;
-        font-size: 4rem;
-        border: 2px solid rgba(255, 255, 255, 0.631);
-        color: rgba(255, 255, 255, 0.823);
-        padding: 0.3rem;
-        font-weight: 100;
-        text-transform: uppercase;
-        font-family: sans-serif;
-        line-height: 4rem;
+        top: 40%;
+        left: 5%;
+        width: 80%;
+        padding: 1rem;
+        font-size: 3.5rem;
+        line-height: 4.5rem;
     }
 }
 
 /*INTERACTIVE AREA*/
 .main-second{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 0 auto;
+  margin: 9rem auto;
+  width: 70vw;
+  height: 50vh;  
 }
-article {
-    width: 40%;
+.article-vr {
+    position: relative;
     background-color: white;
-    font-size: 1.5rem;
-    padding: 1.5rem;
-    margin-left: -21rem;
-    margin-bottom: -30rem;
+    left: 58vh;
+    top: 10vw;
+    width: 35%;
+    padding: 6rem;
+    display: inline-block;
+}
+.article-vr h3{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    font-family: 'Atala';
+    font-weight: lighter;
+}
+.article-vr p{
+    font-size: 1.8rem;
 }
 .main-second img {
-    width: 80%;
-    
+    position: absolute;
    
 }
-.margin-main{
-    margin: 3rem ;
+@media (max-width:1440px){
+    .main-second img {
+        position: absolute;
+        width: 50vw;
+     }
+    .article-vr {
+        position: relative;
+        background-color: white;
+        left: 58vh;
+        top: 12vw;
+        width: 35%;
+        padding: 6rem;
+        display: inline-block;
+    }
+    .article-vr h3{
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+        font-family: 'Atala';
+        font-weight: lighter;
+    }
+    .article-vr p{
+        font-size: 1.6rem;
+    }
+}
+@media (max-width:1024px){
+    .main-second img {
+        position: absolute;
+        width: 50vw;
+     }
+     .article-vr {
+        position: relative;
+        background-color: white;
+        left: 49vh;
+        top: 9vw;
+        width: 35%;
+        padding: 4rem;
+        display: inline-block;
+    }
+    .article-vr h3 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        font-family: 'Atala';
+        font-weight: lighter;
+    }
+    .article-vr p {
+        font-size: 1.3rem;
+    }
+}
+@media (max-width:768px){
+    .main-second {
+        width: 50vw;
+        height: auto;
+        margin: 6rem auto;
+    }
+    .main-second img {
+        width:54vw;
+        margin: 0;
+        position: inherit;
+     }
+     .article-vr {
+        background-color: white;
+        padding: 1.5rem;
+        width: 50vw;
+        position: inherit;
+        margin-top: 3rem;
+    }
+    .article-vr h3 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        font-family: 'Atala';
+        font-weight: lighter;
+        color: rgba(0, 0, 0, 0.667);
+    }
+    .article-vr p {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width:425px){ 
+    .main-second {
+        width: 100vw;
+        height: auto;
+        
+    }   
+    .main-second img {
+        width: 97vw;
+        position: inherit;
+    }
+    .article-vr {
+        background-color: white;
+        padding: 1.5rem;
+        width: 85vw;
+        position: inherit;
+        margin-top: 3rem;
+    }
+    .article-vr h3 {
+       text-align: center;
+    }
+    .article-vr p {
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+}
+
+.main-three{
+    width: 50vw;
+    margin: auto;
+}
+.our-creations-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.our-creations-area h1{
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+#btn-see{
+    background-color: black;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 1rem;
+    color: white;
 }
