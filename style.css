@@ -221,7 +221,7 @@ html{
 
 /*INTERACTIVE AREA*/
 .main-second {
-    margin: 9rem auto;
+    margin: 6rem auto 0rem;
     width: 70vw;
     height: 60vh;
 }
@@ -353,13 +353,13 @@ html{
 }
 .main-three{
     width: 70vw;
-    margin: auto;
+    margin: 0 auto 6rem ;
 }
 .our-creations-area{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 6rem 0;
+    margin: 0 0 3rem 0;
 }
 .our-creations-area h1{
     text-transform: uppercase;
@@ -416,4 +416,41 @@ html{
     font-family: 'Josefin' ;
     z-index: 2;
 }
+@media (max-width:1440px){
+    .txt-box {
+        position: absolute;
+        text-transform: uppercase;
+        font-size: 3rem;
+        width: 80%;
+        left: 10%;
+        top: 80%;
+        color: rgba(255, 255, 255, 0.757);
+        font-family: 'Josefin';
+        z-index: 2;
+    }
+}
+@media (max-width: 1024px){
+    .txt-box {
+        position: absolute;
+        text-transform: uppercase;
+        font-size: 2rem;
+        width: 77%;
+        left: 9%;
+        top: 80%;
+        color: rgba(255, 255, 255, 0.757);
+        font-family: 'Josefin';
+        z-index: 2;
+    }
+}
 
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 2rem;
+}
+.info{
+    display: flex;
+    gap: 3rem;
+    list-style-type: none;
+}
