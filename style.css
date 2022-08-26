@@ -377,8 +377,6 @@ html{
     font-family: 'Josefin' ;
     cursor: pointer;
 }
-
-
 .boxes-tipes{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -402,7 +400,6 @@ html{
     background: rgba(0, 0, 0, 0.429);
     box-shadow: inset 120px 100px 250px rgba(0, 0, 0, 0.526); 
 }
-
 .boxe:hover{
     object-fit: cover;
     -webkit-mask-image: linear-gradient(to bottom, rgb(255, 255, 255) , rgba(255, 255, 255, 0.778));
