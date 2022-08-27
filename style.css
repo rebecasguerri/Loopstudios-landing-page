@@ -328,7 +328,7 @@ html{
 }
 @media (max-width:425px){ 
     .main-second {
-        width: 100vw;
+        width: 97vw;
         height: auto;
         
     }   
@@ -339,16 +339,20 @@ html{
     .article-vr {
         background-color: white;
         padding: 1.5rem;
-        width: 85vw;
+        width: 70vw;
         position: inherit;
-        margin-top: 3rem;
+        margin: auto;
+        display: flex;
+        justify-content: center; 
+        flex-direction: column;   
     }
     .article-vr h3 {
-       text-align: center;
+        text-align: center;
+        font-size: 3rem;
     }
     .article-vr p {
         font-size: 1.5rem;
-        text-align: justify;
+        text-align: center;
     }
 }
 .main-three{
@@ -367,7 +371,7 @@ html{
     font-weight: 200;
     font-family: 'Josefin' ;
 }
-#btn-see{
+.btn-see{
     background-color: black;
     border: none;
     text-transform: uppercase;
@@ -449,6 +453,27 @@ html{
         gap: 3rem;
     }
 }
+@media (max-width:600px){
+    .btn-see{
+        display: none;
+    }
+    .btn-bottom-page{
+        background-color: black;
+        border: none;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        padding: 1rem 3rem;
+        color: white;
+        font-family: 'Josefin' ;
+        cursor: pointer;
+        margin: 2rem auto;
+    }
+    .boxes-tipes {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap: 3rem;
+    }
+}
 
 
 
@@ -485,14 +510,31 @@ footer{
     color: rgba(255, 255, 255, 0.529);
     font-size: 1.1rem;
 }
-@media (max-width: 768px){
+@media (max-width: 700px){
     footer {
         background-color: black;
         color: white;
         display: flex;
+        flex-direction: column;
         padding: 2rem 0rem;
         justify-content: space-between;
         align-items: center;
         font-family: 'Atala';
+    }
+
+    .info {
+        display: flex;
+        gap: 3rem;
+        flex-direction: column;
+        margin-top: 1rem;
+        font-size: 1.3rem;
+        color: rgba(255, 255, 255, 0.727);
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .res {
+        margin-left: -3.5rem;
+        color: rgba(255, 255, 255, 0.529);
+        font-size: 1.1rem;
     }
 }
