@@ -109,6 +109,7 @@ html{
     text-align: left;
     padding-top: 10rem;
     margin: -4rem auto 0;
+    
 }
 
 .nav-menu.active{
@@ -122,6 +123,7 @@ html{
     cursor: pointer;
     font-family: sans-serif;
     line-height: 6rem;  
+    font-family: 'Atala';
   
 }
 
