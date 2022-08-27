@@ -339,7 +339,7 @@ html{
     .article-vr {
         background-color: white;
         padding: 1.5rem;
-        width: 70vw;
+        width: 89vw;
         position: inherit;
         margin: auto;
         display: flex;
@@ -482,7 +482,7 @@ html{
         position: absolute;
         text-transform: uppercase;
         font-size: 2rem;
-        width: 35%;
+        width: 37%;
         left: 6%;
         top: 45%;
         color: rgba(255, 255, 255, 0.757);
