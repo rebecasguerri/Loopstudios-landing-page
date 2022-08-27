@@ -468,6 +468,7 @@ html{
         font-family: 'Josefin' ;
         cursor: pointer;
         margin: 2rem auto;
+        display:block;
     }
     .boxes-tipes {
         display: grid;
