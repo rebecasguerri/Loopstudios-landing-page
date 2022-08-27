@@ -17,4 +17,6 @@ Status: **Finalizado 😃**
   
   ## [Loopstudios Landingpage](https://rebecasguerri.github.io/Loopstudios-landing-page//)
   
+  ![ezgif com-gif-maker (1)](https://raw.githubusercontent.com/rebecasguerri/Loopstudios-landing-page/main/loop%20gif/ezgif.com-gif-maker.gif)
+  
   visite meu perfil no [linkedin](https://www.linkedin.com/in/rebeca-freitas-16b16a232/) 💟
