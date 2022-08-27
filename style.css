@@ -418,6 +418,9 @@ html{
     font-family: 'Josefin' ;
     z-index: 2;
 }
+.btn-bottom-page{
+    display: none;
+}
 @media (max-width:1440px){
     .txt-box {
         position: absolute;
