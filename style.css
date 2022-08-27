@@ -473,6 +473,46 @@ html{
         grid-template-columns: 1fr 1fr ;
         gap: 3rem;
     }
+    .boxes-tipes {
+        display: grid;
+        grid-template-columns: 1fr ;
+        gap: 3rem;
+    }
+    .txt-box {
+        position: absolute;
+        text-transform: uppercase;
+        font-size: 2rem;
+        width: 35%;
+        left: 6%;
+        top: 45%;
+        color: rgba(255, 255, 255, 0.757);
+        font-family: 'Josefin';
+        z-index: 2;
+    }
+   
+    #pqn-grid{
+        width: 30%;
+    }
+    
+}
+@media (max-width:320px){
+    .main-three {
+        width: 70vw;
+        margin: 0;
+    }
+    .boxes-tipes {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        width: 90vw;
+        margin: 0 1.5rem;
+    }
+    .our-creations-area h1 {
+        margin: 0 1.5rem;
+    }
+    .btn-bottom-page {
+        margin: 2rem 1.5rem;
+    }
 }
 
 
@@ -524,7 +564,7 @@ footer{
 
     .info {
         display: flex;
-        gap: 3rem;
+        gap: 1rem;
         flex-direction: column;
         margin-top: 1rem;
         font-size: 1.3rem;
