@@ -15,7 +15,7 @@ Status: **Finalizado 😃**
   ---|---|---|
   31.5%|66.7%| 1.8%
   
-  ## [Loopstudios Landingpage](https://rebecasguerri.github.io/Loopstudios-landing-page//)
+  ## [Loopstudios Landingpage](https://rebecafreitass.github.io/Loopstudios-landing-page/)
   
    ![ezgif com-gif-maker (1)](https://raw.githubusercontent.com/rebecasguerri/Loopstudios-landing-page/main/loop%20gif/ezgif.com-gif-maker.gif)
   
